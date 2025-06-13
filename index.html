@@ -88,7 +88,6 @@ Legend:
 |line01&gt;[($change_background: 1)(align: &quot;=&gt;&lt;=&quot;)[=&#39;&#39;A (seq-link: bind $p1c1, &quot;balled-up&quot;, &quot;crumpled&quot;, &quot;smoothed out&quot;) piece of paper&#39;&#39;[&#39;&#39;.&#39;&#39;]&lt;p1h1|
 
 
-
 ]\
 (align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXX==&quot;)[=\
 |line02)[$newline[=[Do you (seq-link: bind $p2c1, &quot;remember&quot;, &quot;know&quot;, &quot;even care&quot;, &quot;remember&quot;)]&lt;p2h1|[ that ](p2h2|[day we went to the (seq-link: bind $p2c2, &quot;moon&quot;, &quot;dogs&quot;, &quot;park&quot;).](p2h3|
@@ -102,14 +101,14 @@ Legend:
 ]|line10)[ $newline[=Over (seq-link: bind $p10c1, &quot;days&quot;, &quot;weeks&quot;, &quot;months&quot;) [it got better.](p10h1|
 ]|line11)[ $newline[=It grew (seq-link: bind $p11c1, &quot;healthy&quot;, &quot;fond of me&quot;, &quot;insistent&quot;, &quot;proud&quot;, &quot;larger&quot;)[, larger by far. It stalked around my house[, (seq-link: bind $p11c2, &quot;commenting&quot;, &quot;criticizing&quot;, &quot;appropriating&quot;)](p11h1a|[, claiming it for its own](p11h1b|. (Or was that in my dreams?)](p11h1|]
 |line12)[(transition: &quot;fade&quot;)[=I could never [(cycling-link: bind $p12c1, &quot;give enough&quot;, &quot;rest&quot;, &quot;please it&quot;)]&lt;p12h1| [to earn its (cycling-link: bind $p12c2, &quot;trust&quot;, &quot;approval&quot;, &quot;love&quot;).](p12h2|]
-|line13)[ $newline[=It wanted (seq-link: bind $p13c1, &quot;love&quot;, &quot;care&quot;, &quot;me&quot;, &quot;more and more&quot;). [(cycling-link: bind $p13c2, &quot;Water&quot;, &quot;Wine&quot;, &quot;Trinkets&quot;),  (cycling-link: bind $p13c3, &quot;food&quot;, &quot;exercise&quot;, &quot;sweets&quot;), (cycling-link: bind $p13c4, &quot;sleep&quot;, &quot;sacrifices&quot;, &quot;conversation&quot;).](p13h1|]
+|line13)[ $newline[=It wanted (seq-link: bind $p13c1, &quot;love&quot;, &quot;care&quot;, &quot;me&quot;, &quot;more and more&quot;). [(cycling-link: bind $p13c2, &quot;Water&quot;, &quot;Wine&quot;, &quot;Trinkets&quot;),  (cycling-link: bind $p13c3, &quot;attention&quot;, &quot;exercise&quot;, &quot;sweets&quot;), (cycling-link: bind $p13c4, &quot;sleep&quot;, &quot;sacrifices&quot;, &quot;conversation&quot;).](p13h1|]
 |line14)[ $newline[=It&#39;s (seq-link: bind $p14c1, &quot;my true friend&quot;, &quot;all I need&quot;, &quot;larger than me&quot;) now. [(Or does it only feel that way?)](p14h1| [It (cycling-link: bind $p14c2, &quot;watches&quot;, &quot;looms over&quot;, &quot;judges&quot;) me with (cycling-link: bind $p14c3, &quot;derision&quot;, &quot;suspicion&quot;, &quot;contempt&quot;).](p14h2|]
 |line15)[ $newline[=I [(cycling-link: bind $p15c1, &quot;try&quot;, &quot;watch it&quot;, &quot;love it&quot;, &quot;suffer&quot;, &quot;serve it&quot;)]&lt;p15h0| [in waking.](p15h1| [It pecks and scratches (seq-link: bind $p15c2, &quot;the floor&quot;, &quot;the walls&quot;, &quot;my dreams&quot;).](p15h2|
 ]|line16)[ $newline[=I&#39;m (seq-link: bind $p16c1, &quot;so alone&quot;, &quot;trapped with it&quot;, &quot;not allowed to leave&quot;, &quot;scared&quot;).
 ]|line17)[ $newline[=(seq-link: bind $p17c1, &quot;Please&quot;, &quot;Please, please&quot;, &quot;Please, please, please&quot;) [if you still (seq-link: bind $p17c2, &quot;care&quot;, &quot;love&quot;, &quot;remember&quot;)](p17h1| [me](p17h2| [at all. //Please.//](p17h3|
 ]|line18)[ $newline[=I (seq-link: bind $p18c1, &quot;miss you&quot;, &quot;think it suspects&quot;, &quot;need you&quot;, &quot;need your help&quot;) [- but it will know, it always does. Oh, what&#39;s the hope?](p18h1|
 ]|line19)[ $newline[=What [(cycling-link: bind $p19c2, &quot;love&quot;, &quot;need&quot;, &quot;parasite&quot;, &quot;sharp ruin&quot;) ](p19h1|have I [(cycling-link: 2bind $p19c1, ...$p19c1l)]&lt;p19h2|[ into my heart](p19h3|?\
-]{
+][$newline[=(align: &quot;=&gt;&lt;=&quot;)[=&lt;p style=&quot;font-family:helvetica;&quot;&gt;&#39;&#39;FIN&#39;&#39;&lt;/p&gt;](fin|{
 
 &lt;!-- 
 ** EVENTS ** 
@@ -168,7 +167,7 @@ Legend:
 (event: when $p10c1 is &quot;months&quot;)[($resolve: &quot;months&quot;)$addhook(show: ?p10h1)(after: time + $p_delay)[=(show: ?line13)]\
 &lt;!-- * COMBO BLOCK * --&gt;\
 (event: when $p13c1 is &quot;more and more&quot;)[($resolve: &quot;more and more&quot;)$addhook(show: ?p13h1)]\
-(event: when $p13c2 is &quot;Trinkets&quot; and $p13c3 is &quot;food&quot; and $p13c4 is &quot;sacrifices&quot;)[(replace: ?p13h1)[($res_hook: &quot;Trinkets&quot;), ($res_hook: &quot;food&quot;), ($res_hook: &quot;sacrifices&quot;).](after: time + $p_delay)[=(show: ?line11)]
+(event: when $p13c2 is &quot;Trinkets&quot; and $p13c3 is &quot;attention&quot; and $p13c4 is &quot;sacrifices&quot;)[(replace: ?p13h1)[($res_hook: &quot;Trinkets&quot;), ($res_hook: &quot;attention&quot;), ($res_hook: &quot;sacrifices&quot;).](after: time + $p_delay)[=(show: ?line11)]
 (event: when $p11c1 is &quot;larger&quot;)[($resolve: &quot;larger&quot;)$addhook(show: ?p11h1)(after: time + $p_delay)[=(show: ?line14)]\
 (event: when $p14c1 is &quot;larger than me&quot;)[($resolve: &quot;larger than me&quot;)$addhook(show: ?p14h1)(after: time + $p_delay)[=(show: ?p11h1a)]\
 (event: when $p11c2 is &quot;appropriating&quot;)[($resolve: &quot;appropriating&quot;)$addhook(show: ?p11h1b)(after: time + $p_delay)[=(show: ?line12)]
@@ -183,7 +182,7 @@ Legend:
 (event: when $p18c1 is &quot;need your help&quot;)[($resolve: &quot;need your help&quot;)$addhook(show: ?p18h1)(after: time + $p_delay)[=(show: ?line19)]\
 (set: $p19c1l to (a: &quot;done&quot;, &quot;become&quot;, &quot;taken&quot;))\
 (event: when $p19c1 is &quot;taken&quot;)[$addhook(show: ?p19h1, ?p19h3)(set: $p19c1l to it + (a: &quot;plunged&quot;) - (a: &quot;done&quot;, &quot;become&quot;))(rerun: ?p19h2) ]\
-(event: when $p19c1 is &quot;plunged&quot; and $p19c2 is &quot;sharp ruin&quot;)[(replace: ?p19h1)[($res_hook: &quot;sharp ruin&quot;) ]($bird_effect: &quot;sharp ruin&quot;)(replace: ?p19h2)[($res_hook: &quot;plunged&quot;)]]</tw-passagedata><tw-passagedata pid="2" name="debug footer" tags="debug-footer" position="900,475" size="100,100">---
+(event: when $p19c1 is &quot;plunged&quot; and $p19c2 is &quot;sharp ruin&quot;)[(replace: ?p19h1)[($res_hook: &quot;sharp ruin&quot;) ]($bird_effect: &quot;sharp ruin&quot;)(replace: ?p19h2)[($res_hook: &quot;plunged&quot;)](show: ?fin)]</tw-passagedata><tw-passagedata pid="2" name="debug footer" tags="debug-footer" position="900,475" size="100,100">---
 (text-size:0.8)[=(link: &quot;Restart&quot;)[(go-to: &quot;MAIN&quot;)&lt;!--this doesn&#39;t reset all the needed variables!--&gt;] | \
 bg (link-rerun: &quot;1&quot;)[($change_background: 1)] (link-rerun: &quot;2&quot;)[($change_background: 2)] (link-rerun: &quot;3&quot;)[($change_background: 3)] | \
 [Line Delay: $p_delay (link-rerun: &quot;0&quot;)[(_pd: 0.0s)] (link-rerun: &quot;fast&quot;)[(_pd: 0.4s)] (link-rerun: &quot;def&quot;)[(_pd: $p_delay_default)] (link-rerun: &quot;slow&quot;)[(_pd: 1.5s)]]&lt;linedelay| | \
